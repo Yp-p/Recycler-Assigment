@@ -23,20 +23,21 @@
                 android:layout_height="100dp"
                 android:background="@drawable/topshop"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="10dp">
 
                 <Button
                     android:id="@+id/btnMenu"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/menu"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/btnPage1Seaech"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/search"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -129,7 +130,7 @@
 
                 <View
                     android:id="@+id/lview"
-                    android:layout_width="1dp"
+                    android:layout_width="3dp"
                     android:layout_height="20dp"
                     android:background="@android:color/holo_blue_light"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -159,6 +160,7 @@
 
                 <fragment
                     android:id="@+id/latestCard"
+                    android:layout_marginVertical="10dp"
                     android:name="com.ypp.assigment_rc_home.LatestFragment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -171,7 +173,7 @@
                 android:id="@+id/Upload"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginVertical="20dp"
                 android:background="@drawable/shop"
                 app:layout_constraintTop_toBottomOf="@id/LatestView">
 
@@ -190,14 +192,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BROWSE BY"
+                        android:text="CAN'T FIND WHAT YOU \n LOOKING FOR?"
                         android:textColor="@color/whiteColor" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:background="@color/orangeColor"
-                        android:text="BRAND"
+                        android:text="UPLOAD PICTURE"
+                        android:paddingHorizontal="10dp"
                         android:textColor="@color/whiteColor" />
                 </LinearLayout>
 
@@ -239,24 +242,36 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="BROWSE BY"
+                        android:text="NEEP HELP \n CUSTOMER SERVICE?"
                         android:textColor="@color/whiteColor" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:background="@color/orangeColor"
-                        android:text="BRAND"
+                        android:text="CALL NOW"
                         android:textColor="@color/whiteColor" />
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/popularText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Coustemer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Popular Product"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textSize="@dimen/titleSize"/>
+
+
             <fragment
                 android:id="@+id/popularFragment"
                 android:layout_margin="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/Coustemer"
+                app:layout_constraintTop_toBottomOf="@id/popularText"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:name="com.ypp.assigment_rc_home.PopularFragment"/>
 

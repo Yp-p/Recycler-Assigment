@@ -13,7 +13,7 @@ class P2_DiscoverAdaptor(var discoverArrayList: ArrayList<P2_Discover>): Recycle
         fun bindDiscover(discover: P2_Discover){
             itemView.discoverImage.setImageResource(discover.discoverImage)
             itemView.discoverItemName.text=discover.discoverName
-            itemView.discoverItem.text=discover.discoverName
+            itemView.discoverItem.text=discover.discoverItem
         }
 
     }

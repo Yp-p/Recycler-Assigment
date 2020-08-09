@@ -24,9 +24,9 @@ class Page2DiscoverFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
        var discoverArr=ArrayList<P2_Discover>()
-        discoverArr.add(P2_Discover(R.drawable.chair,"IPhone","1126 items"))
-        discoverArr.add(P2_Discover(R.drawable.table,"IPhone","1126 items"))
-        discoverArr.add(P2_Discover(R.drawable.hydepark,"IPhone","1126 items"))
+        discoverArr.add(P2_Discover(R.drawable.chair,"Chair","1126 items"))
+        discoverArr.add(P2_Discover(R.drawable.table,"Table","1150 items"))
+        discoverArr.add(P2_Discover(R.drawable.hydepark,"Hydine","2426 items"))
         discoverRecycler.apply {
             layoutManager=LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
             adapter=P2_DiscoverAdaptor(discoverArr)

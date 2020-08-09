@@ -31,7 +31,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     android:text="NEW"
                     android:gravity="center"
-                    android:textSize="@dimen/titleSize"
+                    android:textSize="11sp"
                     android:background="@drawable/bluetextbd_color"
                     android:textColor="@color/whiteColor"/>
                 <TextView
@@ -62,13 +62,16 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:text="Apple"
                     android:textSize="14dp"/>
-                <TextView
+                <RatingBar
                     android:id="@+id/star"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/brand"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    android:text="*****"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:rating="3.5"
+                    android:progress="@android:integer/config_longAnimTime"
+                    android:progressTint="@color/orangeColor"
                     android:textSize="25dp"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
@@ -97,6 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="110000 KS"
+                    android:layout_marginLeft="25dp"
                     android:textColor="@color/black"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

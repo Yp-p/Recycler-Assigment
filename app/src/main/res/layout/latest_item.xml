@@ -31,13 +31,13 @@
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@id/image"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:textSize="@dimen/titleSize"/>
+                android:textSize="15sp"/>
             <TextView
                 android:id="@+id/t2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N41015"
-                android:textSize="@dimen/titleSize"
+                android:textSize="15sp"
                 app:layout_constraintTop_toBottomOf="@id/t1"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:textColor="@color/black"/>
@@ -63,17 +63,21 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toLeftOf="@+id/priceCard">
-                    <TextView
-                        android:padding="3dp"
+                    <RatingBar
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="*****"
-                        android:textSize="20sp"/>
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:isIndicator="true"
+                        android:progress="@android:integer/config_longAnimTime"
+                        android:progressTint="@color/orangeColor"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"/>
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
                     android:id="@+id/priceCard"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_marginTop="1dp"
                     android:layout_marginLeft="1dp"
                     android:layout_height="wrap_content"
@@ -92,6 +96,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="999,99999 Ks"
+                            android:textColor="@color/orangeColor"
                             android:textSize="12sp"/>
                         <TextView
                             android:layout_width="wrap_content"
