@@ -25,9 +25,9 @@ class TrandFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         var trendArr=ArrayList<Item>()
      //   trendArr.add(P2_Trend(1,"IPHONE","$2020"))
-        trendArr.add(Item(R.drawable.chair,"Ivonne Chair Green","$2020"))
-        trendArr.add(Item(R.drawable.chair,"SnakeSkin Pattern","$3055"))
-        trendArr.add(Item(R.drawable.chair,"Armchair Konna Green","$2020"))
+        trendArr.add(Item(R.drawable.ivonne_chair,"Ivonne Chair Green","$2020"))
+        trendArr.add(Item(R.drawable.snakechair,"SnakeSkin Pattern","$3055"))
+        trendArr.add(Item(R.drawable.armchair,"Armchair Konna Green","$2020"))
 
 
         trandRecycler.apply {

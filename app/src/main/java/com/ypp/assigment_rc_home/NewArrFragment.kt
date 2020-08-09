@@ -25,8 +25,8 @@ class NewArrFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var newArr=ArrayList<P2_NewArr>()
-        newArr.add(P2_NewArr(R.drawable.table))
-        newArr.add(P2_NewArr(R.drawable.table))
+        newArr.add(P2_NewArr(R.drawable.sofa))
+        newArr.add(P2_NewArr(R.drawable.sofa1))
         newArrRecycler.apply {
             layoutManager=LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
             adapter=P2_NewArr_Adaptor(newArr)

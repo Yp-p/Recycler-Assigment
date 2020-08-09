@@ -24,10 +24,10 @@ class BestSellingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var bestsellArr=ArrayList<Item>()
-        bestsellArr.add(Item(R.drawable.chair,"Redmi","150000 Ks"))
-        bestsellArr.add(Item(R.drawable.chair,"Redmi","150000 Ks"))
-        bestsellArr.add(Item(R.drawable.chair,"Redmi","150000 Ks"))
-        bestsellArr.add(Item(R.drawable.chair,"Redmi","150000 Ks"))
+        bestsellArr.add(Item(R.drawable.dress,"Ruffle Trim Spot Wrap Dress","$29.00"))
+        bestsellArr.add(Item(R.drawable.radom,"Leaf Floral Print Random","$30.00"))
+        bestsellArr.add(Item(R.drawable.pattern,"Drop Shoulder Geo Pattern","$29.00"))
+
         bestSellRecycler.apply {
             layoutManager=LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
             adapter=BestSellAdaptor(bestsellArr)
